@@ -69,6 +69,8 @@ def main(shelfari_path):
                 row.append('to-read')
             elif 'True' in row[ignore_dict["I've read list"]]:
                 row.append('read')
+            elif 'True' in row[ignore_dict["I'm reading list"]]:
+                row.append('currently-reading')
             else:
                 row.append('unsorted')
 
